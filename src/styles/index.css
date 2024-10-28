@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  background-image: url("../../public/images/Group.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.appContainer {
+  margin: 1rem;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 34px;
+  margin-top: 28px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+}
+.addButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #5f33e1;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  bottom: 35px;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+.btn {
+  width: 121px;
+  height: 36px;
+  border-radius: 72px;
+  border: 1px solid #5f33e1;
+  cursor: pointer;
+}
+.cancel-btn {
+  color: #5f33e1;
+  background-color: #fff;
+}
+.done-btn {
+  background-color: #5f33e1;
+  color: #fff;
+}
+.modal {
+  max-width: 331px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 22px 13px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 32px 0px #0000000a;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.field {
+  background-color: #fcfaff;
+  border: none;
+  color: #828282;
+  width: 296px;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.text-area {
+  height: 255px;
+  overflow: hidden;
+  resize: none;
+}
+.input {
+  height: 40px;
+}
+.list-item-box {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 32px 0px #0000000a;
+  padding: 22px 13px;
+  width: 331px;
+  min-height: 19px;
+  position: relative;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.todo-btn-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 12px;
+  margin-right: 15px;
+}
+.status-circle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+}
+.list-wrapper {
+  max-height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.action-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.txt-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+  cursor: pointer;
+}
+.todo-title {
+  font-size: 9px;
+  color: #6e6a7c;
+}
+.status-action-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 22px;
+}
+.status-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 36px;
+  color: #000000;
+  border-radius: 72px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.status-pending-btn {
+  border: 1px solid #fcbf49;
+}
+.status-done-btn {
+  color: #fff;
+  background-color: #588157;
+  border: 1px solid #588157;
+}
+.status-wont-btn {
+  border: 1px solid #d62828;
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #5f33e1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  color: red;
+  text-align: center;
+}
